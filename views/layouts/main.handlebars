@@ -7,7 +7,7 @@
 
         <!-- Added a link to Bootstrap-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <!--     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
        <link rel="stylesheet" href="/assets/css/style.css" type="text/css" />
@@ -27,15 +27,15 @@
           <div id="orangesection">
 
 		{{#if logged_in}}
-					<a href="/users/sign-out" id="sign-out">Sign Out ({{this.username}})</a> | <a href="/scores">RPS</a> | <a href="/scores/quiz">Quiz</a>
+					<a href="/users/sign-out" id="sign-out">Sign Out ({{this.username}})</a>
 
 					<p class="clear"><strong>logged_in:</strong> {{logged_in}} |
 					<strong>user_email:</strong> {{user_email}} |
 					<strong>user_id:</strong> {{user_id}} |
 					<strong>username:</strong> {{username}}</p>
 				{{else}}
-					<a href="/users/sign-in">Sign In</a>
-					<a href="/users/new">Register</a>
+<!-- 					<a href="/users/sign-in">Sign In</a>
+					<a href="/users/new">Register</a> -->
 				{{/if}}
 
 				{{{ body }}}
@@ -53,7 +53,7 @@
 
 		<script src="https://code.jquery.com/jquery-3.1.1.min.js"integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="crossorigin="anonymous"></script>
 		<script src="/assets/js/ajax.js"></script>
-    <script src="/assets/js/quiz.js"></script>
+
 	</body>
 
 </html>

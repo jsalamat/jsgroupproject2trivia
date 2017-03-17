@@ -40,4 +40,13 @@ router.post('/create', function(req,res) {
 	});
 });
 
+//update route needed if specifying only one score per user id
+// router.post('/update', function(req,res) {
+// 	var query = "UPDATE scores SET total_score=? whereid=?";
+
+// 	connection.query(query, [req.body.total_score, req.session.user_id], function(err, coupons) {
+// 		res.send('200');
+// 	});
+// });
+
 module.exports = router;
