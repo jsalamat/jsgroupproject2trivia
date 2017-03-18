@@ -74,7 +74,7 @@ var questions = [
 
 var currentQuestionIndex = 0;
 var currentQuestion;
-var time = 7*1000;
+var time = 15*1000;
 var timer;
 var score = 0;
 var data = 0;
@@ -86,7 +86,7 @@ function countDown(){
 		$('#time').text(time/1000);
 
 		if (time == 0){
-			time = 7 * 1000;
+			time = 15 * 1000;
 			$('#time').text(time/1000);
 
 			currentQuestionIndex++;
@@ -115,12 +115,14 @@ function countDown(){
 				$('#leaderboard').show();
 				$('#scoreboard').show();
 				$('.players').show();
+				$('#subwrapper2').show();
 			}
 		}
 	}, 1 * 1000);
 }
 
 $('#container').hide();
+$('#subwrapper2').hide();
 
 $('#startGame').on('click', function(){
 	countDown();
@@ -129,6 +131,8 @@ $('#startGame').on('click', function(){
 	$('#leaderboard').hide();
 	$('#scoreboard').hide();
 	$('.players').hide();
+	$('#subwrapper').hide();
+	$('#subwrapper2').hide();
 
 })
 
@@ -169,7 +173,7 @@ $(document).on('click', '.answer', function(){
 
 	if (currentQuestionIndex <= questions.length - 1){
 		loadQuestion();
-		time = 1000 * 7;
+		time = 1000 * 15;
 		$('#time').text(time/1000);
 	}else{
 
@@ -186,6 +190,7 @@ $(document).on('click', '.answer', function(){
 		});
 
 		clearInterval(timer);
+		$('#subwrapper2').show();
 		$('#startGame').show();
 		$("#container").empty();
 		$("#container").html("<p>Finito!</p>");

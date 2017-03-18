@@ -223,7 +223,7 @@ button#add-newuser, a#backtomain  {
       background-color: #25769d;
       border: 2px solid #25769d;
       letter-spacing: 0px; 
-      margin: 20px 15px 100px 100px;
+      margin: 10px 15px 40px 110px;
       padding: 5px 20px 3px;
       max-width: 330px;
       border-radius: 10px;
@@ -283,6 +283,14 @@ button#add-newuser, a#backtomain  {
     #displaystatus {
       color: #25769d;
       font-size: 20px;
+    }
+
+    #subwrapper {
+		color: #20567b;
+    }
+
+    #subwrapper2 {
+		color: #20567b;
     }
 
 
