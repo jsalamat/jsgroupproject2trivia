@@ -24,22 +24,30 @@
 
 <div class="body-gradient">
         <div class="container">
-          <div id="orangesection">
+
 
 		{{#if logged_in}}
-					<a href="/users/sign-out" id="sign-out">Sign Out ({{this.username}})</a>
+					
+        <div id="userStatus">
+					<p class="clear">
+     <!--      <strong>logged_in:</strong> {{logged_in}} | -->
+              <strong>username:</strong> {{username}} | 
+    					<strong>email:</strong> {{user_email}} |
+    					<strong>id:</strong> {{user_id}} 
+          </p>
+			         
+        </div>
+        <a href="/users/sign-out" id="sign-out">Sign Out ({{this.username}})</a>
 
-					<p class="clear"><strong>logged_in:</strong> {{logged_in}} |
-					<strong>user_email:</strong> {{user_email}} |
-					<strong>user_id:</strong> {{user_id}} |
-					<strong>username:</strong> {{username}}</p>
 				{{else}}
 <!-- 					<a href="/users/sign-in">Sign In</a>
 					<a href="/users/new">Register</a> -->
 				{{/if}}
 
-				{{{ body }}}
+        <div id="orangesection">
 
+				{{{ body }}}
+    
         </div>
     </div>
 </div>

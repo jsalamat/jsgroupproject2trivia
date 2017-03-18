@@ -1,6 +1,6 @@
     html, body {
     /*  background-color: grey;*/
-/*      background: url(../images/background-graph.jpg) no-repeat center center;
+/*      background: url(../images/tronback.jpg) no-repeat center center;
         background-size: cover;*/
     }
 
@@ -25,10 +25,11 @@
       padding: 0;
     /*  background-color: rgba(255,165,0, 0.4);*/
       background: linear-gradient(to right, rgba(92, 205, 254,1), rgba(8, 39, 70, 1));
-      
       border-top: 4px solid #000000;
       border-bottom: 4px solid #000000;
       box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+/*If want to replace grad with image */    
+/*      background-image: url("../images/bodysection.jpg");*/
 
     }
 
@@ -212,7 +213,7 @@ button#add-newuser, a#backtomain  {
 
     /*____layouts index handlebars and quiz Style____________________________*/
 
-    button#startGame, a#sign-out  {
+    button#startGame  {
       font-weight: bold;
       display: inline-block;
       font-size: 16px;
@@ -229,19 +230,83 @@ button#add-newuser, a#backtomain  {
       box-shadow: 4px 5px #999;
     }
 
-    button#startGame:hover, a#sign-out:hover  {
+    button#startGame:hover  {
       color: #25769d;
       background-color: #ffffff;
       border: 2px solid #ffffff;
     /*  text-shadow: 2px 2px 2px grey;*/
     }
 
-    button#startGame:active, a#sign-out:active {
+    button#startGame:active {
       background-color: #ffffff;
       box-shadow: 3px 3px #666;
       transform: translateY(4px);
     }
 
+    /*____userstatus and signout Style____________________________*/
+
+    #userStatus {
+      background-color: rgba(239, 245, 254, 1);
+      float: left;
+      margin: 0px;
+      padding: 0px;
+      border: 0px;
+      width: 100%;
+    }
+
+    a#sign-out  {
+      font-weight: bold;
+      display: inline-block;
+      font-size: 16px;
+      color: #ffffff;
+      background-color: #25769d;
+      border: 2px solid #25769d;
+      letter-spacing: 0px; 
+      margin: 20px 15px 20px 10px;
+      padding: 5px 20px 3px;
+      max-width: 330px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 4px 5px #999;
+    }
+
+    a#sign-out:hover  {
+      color: #25769d;
+      background-color: #ffffff;
+      border: 2px solid #ffffff;
+    /*  text-shadow: 2px 2px 2px grey;*/
+    }
+
+    a#sign-out:active {
+      background-color: #ffffff;
+      box-shadow: 3px 3px #666;
+      transform: translateY(4px);
+    }
+
+    /*____layouts leaderboard and scoreboards Style____________________________*/
+
     #leaderboard {
-      background-color: rgba(239, 245, 254, 1)
-}
+      font-size: 14px;
+      text-align: center;
+      font-weight: bold;
+      background-color: #20567b;
+      color: #ffffff;
+      padding-top: 2px;
+    }
+
+    #scoreboard {
+      background-color: #999999;
+      border: 1px solid #20567b;
+    }
+
+     .players {
+      font-size: 14px;
+      background-color: rgba(239, 245, 254, 1);
+      border: .5px solid #20567b;
+      padding: 2px 0 2px 20px;
+      margin: 5px 0 0 0;
+
+    }
+
+
