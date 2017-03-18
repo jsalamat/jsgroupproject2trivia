@@ -53,7 +53,7 @@ function countDown(){
 
 				clearInterval(timer);
 				// alert('put a fork in it');
-				$("#displaystatus").html("<p>winner winner winner!!</p>");
+				// $("#displaystatus").html("<p>winner winner winner!!</p>");
 				$("#container").empty();
 				$("#container").html("<p>Finito!</p>");
 				$('#leaderboard').show();

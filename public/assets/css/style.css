@@ -293,17 +293,21 @@ button#add-newuser, a#backtomain  {
       margin: 0px;
       padding: 0px;
       border: 0px;
-      width: 100%;
-    }
+      width: 30%;
+      text-align: center;
+      color:#20567b;
+      font-weight: bold;
+   }
 
     a#sign-out  {
+      float: right;
       font-weight: bold;
       display: inline-block;
       font-size: 16px;
-      color: #ffffff;
-      background-color: #25769d;
-      border: 2px solid #25769d;
-      letter-spacing: 0px; 
+      color: #ffffff ;
+      background-color: #25769d ;
+      border: 2px solid #25769d ;
+      letter-spacing: 0px;
       margin: 20px 15px 20px 10px;
       padding: 5px 20px 3px;
       max-width: 330px;
@@ -311,7 +315,8 @@ button#add-newuser, a#backtomain  {
       cursor: pointer;
       text-decoration: none;
       box-shadow: 4px 5px #999;
-    }
+      margin:0px;
+   }
 
     a#sign-out:hover  {
       color: #25769d;
