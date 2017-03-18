@@ -52,9 +52,13 @@ function countDown(){
 				});
 
 				clearInterval(timer);
-				alert('put a fork in it');
+				// alert('put a fork in it');
+				$("#displaystatus").html("<p>winner winner winner!!</p>");
 				$("#container").empty();
 				$("#container").html("<p>Finito!</p>");
+				$('#leaderboard').show();
+				$('#scoreboard').show();
+				$('.players').show();
 			}
 		}
 	}, 1 * 1000);
@@ -64,7 +68,12 @@ $('#container').hide();
 
 $('#startGame').on('click', function(){
 	countDown();
+	$('#startGame').hide();
 	$('#container').show();
+	$('#leaderboard').hide();
+	$('#scoreboard').hide();
+	$('.players').hide();
+
 })
 
 
@@ -89,10 +98,12 @@ loadQuestion();
 
 $(document).on('click', '.answer', function(){
 	if ($(this).data('key') == currentQuestion.correctAnswer){
-		alert('winner winner winner!!');
+		// alert('winner winner winner!!');
+		$("#displaystatus").html("<p>winner winner winner!!</p>");
 		score = score + 10;
 	}else{
-		alert('you are a weiner weiner weiner');
+		// alert('you are a weiner weiner weiner');
+		$("#displaystatus").html("<p>loser loser loser!!</p>");
 		score = score - 5;
 	}
 
@@ -119,8 +130,12 @@ $(document).on('click', '.answer', function(){
 		});
 
 		clearInterval(timer);
+		$('#startGame').show();
 		$("#container").empty();
 		$("#container").html("<p>Finito!</p>");
+		$('#leaderboard').show();
+		$('#scoreboard').show();
+		$('.players').show();
 	}
 })
 

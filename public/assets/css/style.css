@@ -243,6 +243,48 @@ button#add-newuser, a#backtomain  {
       transform: translateY(4px);
     }
 
+    button.answer  {
+      font-weight: bold;
+      display: inline-block;
+      font-size: 16px;
+      color: #25769d;
+      background-color: #ffffff;
+      border: 2px solid #ffffff;
+      letter-spacing: 0px; 
+      margin: 20px 15px 20px 10px;
+      padding: 5px 20px 3px;
+      max-width: 330px;
+      border-radius: 10px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 4px 5px #999;
+    }
+
+    button.answer:hover  {
+      color: #ffffff;
+      background-color: #25769d;
+      border: 2px solid #25769d;
+    /*  text-shadow: 2px 2px 2px grey;*/
+    }
+
+    button.answer:active {
+      background-color: #25769d;
+      box-shadow: 3px 3px #666;
+      transform: translateY(4px);
+    }
+
+    #displayQuestion {
+      color: #25769d;
+      font-size: 20px;
+    }
+
+    #displaystatus {
+      color: #25769d;
+      font-size: 20px;
+    }
+
+
+
     /*____userstatus and signout Style____________________________*/
 
     #userStatus {
