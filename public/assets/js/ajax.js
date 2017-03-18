@@ -1,19 +1,75 @@
 var questions = [
 	{
-		question: "What's Robbie Chance's favorite vacation spot?",
-		answers: ["Gettysburg", "Pittsburgh", "Rothensburgh", "his couch"],
+		question: "What is the button sequence of the infamous Contra Code?",
+		answers: ["Up, Up, Down, Down, Left, Right, Left, Right, B, A, Select, Start", "Up, Up, Down, Down", "A, B, B, A, A", "Left, Right, Left, Right, Up, Up, Down, Down, B, A, Start"],
+		correctAnswer: 0
+	},
+	{
+		question: "Who is Sonic the Hedgehog's Sidekick in the second game?",
+		answers: ["Shadow", "Amy", "Tails", "Knuckles"],
+		correctAnswer: 2
+	},
+	{
+		question: "Who is Megaman\'s main enemy?",
+		answers: ["Dr. Cossack", "Dr. Wily", "Dr. Robotnik", "Dr. Phil"],
+		correctAnswer: 1
+	},
+	{
+		question: "Who did Ryu train with in Street Fighter?",
+		answers: ["Ken", "Sagat", "Sakura", "Hibiki Dan"],
+		correctAnswer: 0
+	},
+	{
+		question: "What are the names of the brothers in Double Dragon?",
+		answers: ["Billy and Chuck", "Mario and Luigi", "Billy and Jimmy", "Cheech and Chong"],
+		correctAnswer: 2
+	},
+	{
+		question: "How do you beat Psycho Mantis from Metal Gear Solid?",
+		answers: ["Use the Second Controller", "Study his Patterns", "Use the Game Manual", "Wait for Meryl to Fight Back"],
+		correctAnswer: 0
+	},
+	{
+		question: "What is the other name of the \'Golden Power\' in the Legend of Zelda?",
+		answers: ["Crown Jewels", "Master Sword", "Faberge Eggs", "Triforce"],
 		correctAnswer: 3
 	},
 	{
-		question: "What sport did Richie Rich play when he grew up?",
-		answers: ["football", "fencing", "ballet", "basketball"],
+		question: "What is Mike Haggar\'s day job in Final Fight?",
+		answers: ["Construction Worker", "WWE wrestler", "Dentist", "Mayor"],
 		correctAnswer: 3
 	},
 	{
-		question: "What did Sheri Pie do before the bootcamp?",
-		answers: ["teacher", "hunter", "gatherer", "graphic designer"],
+		question: "Who is the tragic heroine of Final Fantasy 7?",
+		answers: ["Aeris", "Rinoa", "Tifa", "Celes"],
+		correctAnswer: 0
+	},
+	{
+		question: "Which of these pokemon are not an option during the beginning of Pokemon Red/Blue?",
+		answers: ["Squirtle", "Pikachu", "Bulbasaur", "Charmander"],
+		correctAnswer: 1
+	},
+	{
+		question: "Which occupation did Mario not perform in a videogame?",
+		answers: ["Doctor", "Plumber", "Painter", "Kart Driver"],
+		correctAnswer: 1
+	},
+	{
+		question: "Who is the opponent for the dream match in Punchout?",
+		answers: ["Evander Holyfield", "George Foreman", "Mike Tyson", "Muhammad Ali"],
+		correctAnswer: 2
+	},
+	{
+		question: "What are the names of Pac-man enemies?",
+		answers: ["Leo, Mike, Raph, and Donatello", "Moe, Larry, and Curly", "Alvin, Simon, and Theodore", "Blinky, Pinky, Inky, and Clyde"],
 		correctAnswer: 3
-	}
+	},
+		{
+		question: "What game caused a stir to add parental rating for video game?",
+		answers: ["Mortal Kombat", "Doom", "Grand Theft Auto", "Killer Instinct"],
+		correctAnswer: 0
+	},
+
 ]
 
 var currentQuestionIndex = 0;
@@ -99,11 +155,11 @@ loadQuestion();
 $(document).on('click', '.answer', function(){
 	if ($(this).data('key') == currentQuestion.correctAnswer){
 		// alert('winner winner winner!!');
-		$("#displaystatus").html("<p>winner winner winner!!</p>");
+		// $("#displaystatus").html("<p>winner winner winner!!</p>");
 		score = score + 10;
 	}else{
 		// alert('you are a weiner weiner weiner');
-		$("#displaystatus").html("<p>loser loser loser!!</p>");
+		// $("#displaystatus").html("<p>loser loser loser!!</p>");
 		score = score - 5;
 	}
 
