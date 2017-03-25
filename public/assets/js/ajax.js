@@ -1,8 +1,8 @@
 var questions = [
 	{
-		question: "What is the button sequence of the infamous Contra Code?",
-		answers: ["Up, Up, Down, Down, Left, Right, Left, Right, B, A, Select, Start", "Up, Up, Down, Down", "A, B, B, A, A", "Left, Right, Left, Right, Up, Up, Down, Down, B, A, Start"],
-		correctAnswer: 0
+		question: "Who is Mario's Brother?",
+		answers: ["Therion", "Luigi", "Leo", "Wario"],
+		correctAnswer: 1
 	},
 	{
 		question: "Who is Sonic the Hedgehog's Sidekick in the second game?",
@@ -35,13 +35,13 @@ var questions = [
 		correctAnswer: 3
 	},
 	{
-		question: "What is Mike Haggar\'s day job in Final Fight?",
-		answers: ["Construction Worker", "WWE wrestler", "Dentist", "Mayor"],
+		question: "In Resident Evil, which company released \'T\-virus\' on Raccoon City?",
+		answers: ["Techno Global Research Industries", "Department K", "Google", "Umbrella Corps"],
 		correctAnswer: 3
 	},
 	{
-		question: "Who is the tragic heroine of Final Fantasy 7?",
-		answers: ["Aeris", "Rinoa", "Tifa", "Celes"],
+		question: "Which RPG contains Disney Characters?",
+		answers: ["Kingdom Hearts", "Final Fantasy", "Harvest Moon", "Tales of Phantasia"],
 		correctAnswer: 0
 	},
 	{
@@ -50,13 +50,8 @@ var questions = [
 		correctAnswer: 1
 	},
 	{
-		question: "Which occupation did Mario not perform in a videogame?",
-		answers: ["Doctor", "Plumber", "Painter", "Kart Driver"],
-		correctAnswer: 1
-	},
-	{
-		question: "Who is the opponent for the dream match in Punchout?",
-		answers: ["Evander Holyfield", "George Foreman", "Mike Tyson", "Muhammad Ali"],
+		question: "Who is the main character in Halo franchise?",
+		answers: ["Marcus Fenix", "Leon S. Kennedy", "Master Chief", "Commander Shepard"],
 		correctAnswer: 2
 	},
 	{
@@ -64,11 +59,16 @@ var questions = [
 		answers: ["Leo, Mike, Raph, and Donatello", "Moe, Larry, and Curly", "Alvin, Simon, and Theodore", "Blinky, Pinky, Inky, and Clyde"],
 		correctAnswer: 3
 	},
-		{
+	{
 		question: "What game caused a stir to add parental rating for video game?",
 		answers: ["Mortal Kombat", "Doom", "Grand Theft Auto", "Killer Instinct"],
 		correctAnswer: 0
 	},
+	{
+		question: "What is the button sequence of the infamous Contra Code?",
+		answers: ["Up, Up, Down, Down, Left, Right, Left, Right, B, A, Select, Start", "Up, Up, Down, Down", "A, B, B, A, A", "Left, Right, Left, Right, Up, Up, Down, Down, B, A, Start"],
+		correctAnswer: 0
+	}
 
 ]
 
