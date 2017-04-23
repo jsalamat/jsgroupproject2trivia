@@ -5,7 +5,7 @@ The Game Master is an advance trivia App. It requieres a login, authorization, s
 
 ![The Game Master Login](/public/assets/images/gamemasterdemoAImgur.gif "Login and authetication")
 
-![The Game Master Leaderboard and Game](/public/assets/images/gamemasterdemoAImgur.gif "Game Play and Leaderboard")
+![The Game Master Leaderboard and Game](/public/assets/images/gamemasterdemoBImgur.gif "Game Play and Leaderboard")
 
 ## Contributors:
 + Jon Salamat [github](https://github.com/jsalamat)
